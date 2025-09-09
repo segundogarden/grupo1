@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria Mello</title>
+    <style>
+
+        .container h2 {
+    text-align: center;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #ffb6b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffe0e3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d14b57;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x300?text=Bem+vindos+à+Confeitaria+Mello');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .produto {
+            background-color: #fff;
+            border: 1px solid #ffd6d9;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .produto img {
+            width: 100%;
+            border-radius: 5px;
+        }
+       
+
+        footer {
+            background-color: #ffb6b9;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Teste de página</h1>
-    
+
+    <header>
+        <h1>Confeitaria Mello</h1>
+        <p>Doces que derretem o coração 🍰</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Cardápio</a>
+        <a href="#">Encomendas</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div class="banner"></div>
+
+    <div class="container">
+        <h2>Nossos Produtos</h2>
+        
+    <div class="produtos">
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Bolo+de+Chocolate" alt="Bolo de Chocolate">
+            <h3>Bolo de Chocolate</h3>
+            <p>R$ 30,00</p>
+        </div>       
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Briga    deiros" alt="Brigadeiros">
+            <h3>Brigadeiros Gourmet</h3>
+            <p>R$ 3,50 (unidade)</p>
+        </div> 
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Brigadeiros" alt="Brigadeiros">
+            <h3>Brigadeiros tradicionais</h3>
+            <p>R$ 2,00 (unidade)</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Cheesecake" alt="Cheesecake">
+            <h3>Cheesecake de Morango</h3>
+            <p>R$ 28,00</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Mousse" alt="Mousse">
+            <h3>Mousse (maracujá, morango, limão)</h3>
+            <p>R$ 7,00 (potinho)</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Torta+de+Cookies" alt="Torta de cookies">
+            <h3>Torta de cookies</h3>
+            <p>R$ 15,00 (unidade)</p>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/200x150?text=Brownie" alt="Brownie">
+            <h3>Brownie</h3>
+            <p>R$ 3,50 (unidade)</p>
+        </div>
+    </div>
+</div>
+
+        <p>&copy; 2025 Confeitaria Mello - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
-</html
+</html>
