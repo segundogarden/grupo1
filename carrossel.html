@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrossel de Produtos</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f7f7f7;
+    }
+
+    .swiper-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .swiper-slide h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .swiper-slide p {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Carrossel de Produtos -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Produto 1 -->
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/200x200.png?text=Produto+1" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>R$ 100,00</p>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/200x200.png?text=Produto+2" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>R$ 120,00</p>
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/200x200.png?text=Produto+3" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>R$ 150,00</p>
+      </div>
+
+      <!-- Produto 4 -->
+      <div class="swiper-slide">
+        <img src="https://via.placeholder.com/200x200.png?text=Produto+4" alt="Produto 4">
+        <h3>Produto 4</h3>
+        <p>R$ 90,00</p>
+      </div>
+    </div>
+
+    <!-- Botões -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Paginação opcional -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Inicialização do Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 }
+      }
+    });
+  </script>
+
+</body>
+</html>
