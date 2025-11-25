@@ -1,14 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu site</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+     <style>
+
+     .container h2 {
+    text-align: center;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background-color: #ffb6b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffe0e3;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d14b57;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x300?text=Bem+vindos+à+Confeitaria+Mello');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+ .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .produto {
+            background-color: #fff;
+            border: 1px solid #ffd6d9;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .produto img {
+            width: 100%;
+            border-radius: 5px;
+        }
+       
+
+        footer {
+            background-color: #ffb6b9;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+         .logo {
+            width: 80px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+        }
+    </style>
 </head>
 <body>
+
+    <header>
+      <img src="logo confeitaria.png" alt="Logo Confeitaria Mello" class="logo">
+        <h1>Confeitaria Mello</h1>
+        <p>Cardápio 🍰</p>
+    </header>
+    
     <nav>
-        <a href="sobre.html">Sobre</a>
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
         <a href="contato.html">Contato</a>
     </nav>
+</head>
+<body>
+    <section class="contato">
+  <h1>Fale Conosco</h1>
+  <p>Preencha o formulário abaixo e retornaremos o mais rápido possível.</p>
+
+  <div class="contato-container">
+    <form action="enviar.php" method="POST" class="form">
+      <label>Nome</label>
+      <input type="text" name="nome" required>
+
+      <label>E-mail</label>
+      <input type="email" name="email" required>
+
+    </form>
+
+    <div class="info">
+      <h3>Informações</h3>
+      <p>📍 Endereço: Rua Esmeralda, 123</p>
+      <p>📞 WhatsApp: (11) 99999-9999</p>
+      <p>📧 Email: confeitariamello@gmail.com</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
